@@ -1,0 +1,290 @@
+/*
+Animations
+*/
+
+@keyframes FadeInTransition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes SlideDownOnScreenTransition {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+     }
+}
+
+@keyframes SlideUpOffScreenTransition {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -100%;
+        opacity: 0;
+     }
+}
+
+
+/*
+Fonts
+*/
+@font-face {
+    font-family: aileron;
+    src: url("fonts/aileron-regular-webfont.woff");
+}
+
+
+/*
+Elements 
+*/
+
+body{
+    background-image: url("images/background.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    height: 100%;
+    font-family: aileron;
+    animation: FadeInTransition ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+a:hover{
+    color: #5FC4B2 !important; 
+}
+
+
+input[type="range"]{
+    width: 100%;
+    margin: auto;
+}
+
+
+button:hover{
+    color: #5FC4B2 !important;
+    border-color: #5FC4B2 !important;
+
+}
+
+
+/*Classes*/
+
+
+
+.socialIcon{
+    color: white;
+    font-size: 4vh;
+    width: 3vh;
+    padding: 1vh;
+    margin-right: 0;
+}
+
+
+.navButton{
+
+    width: 14vh ;
+    height: 8vh ;
+    font-size: 2vh ;
+    margin-left: 2vh ;
+    margin-right: 2vh ;
+    border-color: white ;
+    color: white ;
+    background-color:transparent ;
+    border-radius: 20px;
+
+}
+
+
+
+.slideDown{
+    animation: SlideDownOnScreenTransition ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+
+
+.slideUp {
+    animation: SlideUpOffScreenTransition ease 1s !important;
+    animation-iteration-count: 1 !important;
+    animation-fill-mode: forwards !important;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;  
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #5FC4B2;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #5FC4B2;
+    cursor: pointer;
+  }
+  
+  
+  .titleDiv{
+      color: #5FC4B2;
+      padding: 2vh;
+  }
+ 
+  .playerButton{
+
+    width: 32% !important;
+    height: 8vh !important;
+    font-size: 2vh !important;
+    margin: auto;
+    border-color: white !important;
+    color: white !important;
+    background-color:transparent !important;
+    border-radius: 20px;
+
+}
+.playerButton:hover{
+    color: #5FC4B2 !important;
+    border-color: #5FC4B2 !important;
+}
+
+.exitDiv{
+    padding: 3vh; 
+    width: 18vh;
+    margin: auto;
+}
+
+
+.closeButton{
+    width: 100% !important;
+    height: 8vh !important;
+    font-size: 2vh !important;
+    border-color: white !important;
+    color: white !important;
+    background-color:transparent !important;
+    border-radius: 20px;
+}
+.closeButton:hover{
+    color: #5FC4B2 !important;
+    border-color: #5FC4B2 !important;
+}
+
+
+
+.page{
+    background-color:#252429;
+    height: 100%;
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: none;
+}
+
+
+/*IDs*/
+
+#landing-logo-div{
+    height: 65vh;
+    width: 100vh;
+    margin: auto;
+}
+
+#landing-logo-img {
+    width: 84vh;
+    display: block;
+    margin-left: auto;
+    padding-top: 15vh;
+    margin-right: auto;
+  }
+
+#landing-contact-div{
+    height: 14vh;
+}
+
+#email-div{
+    height:6vh;
+    color: white;
+    font-size: 4vh;
+    width:38vh;
+    margin: auto;
+}
+
+#socials-div{
+    height: 7vh;
+    margin: auto;
+    margin-top: 4vh;
+    width: 20vh;
+
+}
+
+#buttons-div{
+    height: 10vh;
+    margin: 2vh auto auto auto;
+    width: 56vh;
+    margin-top: 6vh;
+}
+
+
+#art-div{
+    height: 50vh;
+}
+
+#song-art{
+
+    width: 40vh;
+    display: block;
+    margin-left: auto;
+    padding-top: 10vh;
+    margin-right: auto;
+
+}
+
+#timeline-div{
+    padding: 1vh;
+   margin: auto;
+   width: 60vh;
+   color: white;
+   font-family: ae;
+   text-align: center;
+}
+
+
+#controls-div{
+    margin: auto;
+    width: 31vh;
+
+}
+
+#email-div:hover{
+    color:#5FC4B2 !important;
+}
+
+

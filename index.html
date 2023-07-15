@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<style>
+</style>
+<body>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+<div id="landing-logo-div">
+    <img src="images/logo.png" alt="logo" id="landing-logo-img">
+</div>
+<div id="landing-contact-div">
+    <div id="email-div"><p>curdogs@curdogs.ie</p></div>
+    <div id="socials-div"> 
+        <a class="socialIcon"  href="#!" role="button"
+          ><i class="fab fa-spotify fa-lg"></i
+        ></a>
+        <a class="socialIcon" href="#!" role="button"
+          ><i class="fab fa-facebook-f fa-lg"></i
+        ></a>
+        <a  class="socialIcon"  href="#!" role="button"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a></div>
+</div>
+<div id="buttons-div">
+    <button type="button" class="navButton" onclick="OpenPage('contact-page')" data-mdb-ripple-color="dark">CONTACT</button>
+    <button type="button" class="navButton" onclick="OpenPage('music-page')" data-mdb-ripple-color="dark">MUSIC</button>
+    <button type="button" class="navButton" onclick="OpenPage('gigs-page')"  data-mdb-ripple-color="dark">GIGS</button>
+</div>
+<script>
+    function OpenPage(id){
+        let contactPage = document.getElementById(id);
+        contactPage.className="slideDown page";
+        contactPage.style.display="block";
+    }
+    
+    function ClosePage(id){
+        let contactPage = document.getElementById(id);
+        contactPage.className="slideUp page";
+    }
+</script>
+<div  id="contact-page" class="page">
+    <div class="titleDiv">
+        <h3>CONTACT</h3>
+    </div>
+    <div id="contact-form-div">
+    
+        
+
+    </div>
+    <div class="exitDiv">
+        <button type="button" class="closeButton" onclick="ClosePage('contact-page')" data-mdb-ripple-color="dark">CLOSE</button>
+    </div>
+</div>
+<div id="music-page">
+    <div class="titleDiv">
+        <h3>MUSIC</h3>
+    </div>
+    <div id="art-div">
+        <img src="images/art.png" alt="art" id="song-art">
+    </div>
+    <div id="timeline-div">
+        <span id="current-time" class="time">0:00</span><br>
+        <input type="range" id="seek-slider" class="slider" max="100" value="0">
+    </div>
+    <div id="controls-div">
+        <button type="button" class="playerButton" data-mdb-ripple-color="dark"><<</button>
+        <button type="button" class="playerButton" data-mdb-ripple-color="dark">></button>
+        <button type="button" class="playerButton" data-mdb-ripple-color="dark">>></button>
+    </div>
+    <div class="exitDiv">
+        <button type="button" class="closeButton" onclick="ClosePage('music-page')" data-mdb-ripple-color="dark">CLOSE</button>
+    </div>
+</div>
+<div id="gigs-page">
+    <div class="titleDiv">
+        <h3>GIGS</h3>
+    </div>
+    <div class="exitDiv">
+        <button type="button" class="closeButton" onclick="ClosePage('gigs-page')" data-mdb-ripple-color="dark">CLOSE</button>
+    </div>
+</div>
+</body>
+</html>
