@@ -77,6 +77,10 @@ button:hover{
     border-color: #5FC4B2 !important;
 
 }
+label{
+    color: #5FC4B2 !important;
+}
+
 
 
 /*Classes*/
@@ -288,3 +292,15 @@ button:hover{
 }
 
 
+
+#submit-button{
+
+width: 70%;
+
+}
+
+
+#form-message{
+    height: 25vh;;
+}
+ 
